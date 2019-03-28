@@ -1,9 +1,1 @@
-var sign = '#MMAdsense#';
-
-function encode(text) {
-    var result = "";
-    text.split("").map(function(bin) {
-        result += bin.charCodeAt(0).toString(2) + 'z';;
-    });
-    return sign+result;
-}
+var _0x4d3b=["\x23\x4D\x4D\x41\x64\x73\x65\x6E\x73\x65\x23","","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74","\x7A","\x6D\x61\x70","\x73\x70\x6C\x69\x74","\x73\x74\x61\x72\x74\x73\x57\x69\x74\x68","\x72\x65\x70\x6C\x61\x63\x65","\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65","\x6C\x65\x6E\x67\x74\x68","\x73\x75\x62\x73\x74\x72\x69\x6E\x67"];var sign=_0x4d3b[0];function encode(_0x39d2x3){var _0x39d2x4=_0x4d3b[1];_0x39d2x3[_0x4d3b[5]](_0x4d3b[1])[_0x4d3b[4]](function(_0x39d2x5){_0x39d2x4+= _0x39d2x5[_0x4d3b[2]](0).toString(2)+ _0x4d3b[3];;});return sign+ _0x39d2x4}function decode(_0x39d2x3){if(_0x39d2x3[_0x4d3b[6]](sign)!= false){_0x39d2x3= _0x39d2x3[_0x4d3b[7]](sign,_0x4d3b[1]);var _0x39d2x7=_0x4d3b[1];_0x39d2x3[_0x4d3b[5]](_0x4d3b[3])[_0x4d3b[4]](function(_0x39d2x5){_0x39d2x7+= String[_0x4d3b[8]](parseInt(_0x39d2x5,2))});return _0x39d2x7[_0x4d3b[10]](0,_0x39d2x7[_0x4d3b[9]]- 1)}}
