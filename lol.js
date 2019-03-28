@@ -14,12 +14,12 @@ function findElements(tag) {
         } else {
             var found = elements[i].innerHTML;
         }
-        
+
         found = found.match(/#MMAdsense#(.*z)/gm);
-        if(found!=null){
-            found=found[0];
-        }else{
-			found = '';
+        if (found != null) {
+            found = found[0];
+        } else {
+            found = '';
         }
 
         var id = elements[i].id;
