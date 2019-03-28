@@ -1,3 +1,4 @@
+var sign = '#MMAdsense#';
 
 function decode(text) {
     var temp = "";
@@ -5,6 +6,14 @@ function decode(text) {
         temp += String.fromCharCode(parseInt(bin, 2));
     });
     return temp.substring(0, temp.length - 1);
+}
+
+function is_url(str) {
+    if(str.indexOf(window.location.href) != -1) {
+        return true;
+    }else{
+        return false;
+    }
 }
 
 function findElements(tag) {
@@ -16,11 +25,14 @@ function findElements(tag) {
             var found = elements[i].innerHTML;
         }
         var found_temp = found;
-        found = found.match(/#MMAdsense#(.*z)/gm);
-        if (found != null) {
-            found = found[0];
-        } else {
-            found = found_temp;
+        
+        if(is_url(found)!=true){
+            found = found.match(/#MMAdsense#(.*z)/gm);
+            if (found != null) {
+                found = found[0];
+            } else {
+                found = found_temp;
+            }
         }
 
         var id = elements[i].id;
