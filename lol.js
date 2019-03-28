@@ -1,3 +1,4 @@
+
 function decode(text) {
     var temp = "";
     text.split("z").map(function(bin) {
@@ -14,12 +15,12 @@ function findElements(tag) {
         } else {
             var found = elements[i].innerHTML;
         }
-
+        var found_temp = found;
         found = found.match(/#MMAdsense#(.*z)/gm);
         if (found != null) {
             found = found[0];
         } else {
-            found = '';
+            found = found_temp;
         }
 
         var id = elements[i].id;
